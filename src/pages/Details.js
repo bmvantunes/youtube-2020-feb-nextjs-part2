@@ -1,19 +1,25 @@
 import Link from 'next/link';
-
-const people = [
-  { v: 'car', name: 'bruno' },
-  { v: 'bike', name: 'John' },
-  { v: 'airplane', name: 'Mick' }
-];
+import { useEffect, useState } from 'react';
 
 export default function Details() {
+  const [owners, setOwners] = useState([]);
+  useEffect(() => {
+    async function loadData() {
+      const response = await fetch('http://localhost:4001/vehicles');
+      const ownersList = await response.json();
+      setOwners(ownersList);
+    }
+
+    loadData();
+  }, []);
+
   return (
     <div>
-      {people.map(e => (
-        <div>
-          <Link as={`/${e.v}/${e.name}`} href="/[vehicle]/[person]">
+      {owners.map((e, index) => (
+        <div key={index}>
+          <Link as={`/${e.vehicle}/${e.ownerName}`} href="/[vehicle]/[person]">
             <a>
-              Navigate to {e.name}'s {e.v}
+              Navigate to {e.ownerName}'s {e.vehicle}
             </a>
           </Link>
         </div>
