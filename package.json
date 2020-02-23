@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "mock-server": "json-server --watch ./db.json -p 4001 -d 100"
+    "mock-server": "json-server --watch ./db.json -p 4001 -d 3000"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
