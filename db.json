@@ -1,0 +1,20 @@
+{
+    "vehicles": [
+      {
+        "vehicle": "Car",
+        "ownerName": "Bruno Antunes"
+      },
+      {
+        "vehicle": "Bike",
+        "ownerName": "John Doe"
+      },
+      {
+        "vehicle": "Airplane",
+        "ownerName": "Bill Gates"
+      } ,
+      {
+        "vehicle": "SpaceX",
+        "ownerName": "Elon Musk"
+      }      
+    ]
+  }
