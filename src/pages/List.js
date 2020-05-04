@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import fetch from 'isomorphic-unfetch';
 
 export default function List({ownersList}) {
   // const [owners, setOwners] = useState([]);

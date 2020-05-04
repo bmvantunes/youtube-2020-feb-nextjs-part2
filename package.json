@@ -9,13 +9,13 @@
     "mock-server": "json-server --watch ./db.json -p 4001 -d 3000"
   },
   "dependencies": {
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "9.2.1",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "swr": "^0.1.17"
+    "isomorphic-unfetch": "3.0.0",
+    "next": "9.3.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "swr": "0.2.0"
   },
   "devDependencies": {
-    "json-server": "^0.16.1"
+    "json-server": "0.16.1"
   }
 }
